@@ -1,0 +1,644 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #6366f1,
+        #9333ea
+    );
+
+    overflow-x: hidden;
+
+    padding: 30px 15px;
+
+}
+
+
+/* Background Circles */
+
+.background-circle {
+
+    position: fixed;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    filter: blur(2px);
+
+}
+
+
+.circle-one {
+
+    width: 300px;
+
+    height: 300px;
+
+    top: -100px;
+
+    left: -80px;
+
+}
+
+
+.circle-two {
+
+    width: 400px;
+
+    height: 400px;
+
+    bottom: -180px;
+
+    right: -100px;
+
+}
+
+
+/* Main Container */
+
+.game-container {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+/* Game Card */
+
+.game-card {
+
+    background: rgba(255, 255, 255, 0.96);
+
+    padding: 38px 35px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.20);
+
+    backdrop-filter: blur(15px);
+
+}
+
+
+/* Game Icon */
+
+.game-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #ede9fe
+    );
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+
+    margin: 0 auto 18px;
+
+}
+
+
+/* Heading */
+
+h1 {
+
+    color: #1e293b;
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    margin-bottom: 7px;
+
+}
+
+
+.subtitle {
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Range Information */
+
+.range-info {
+
+    background: #f1f5ff;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+    color: #64748b;
+
+    font-size: 13px;
+
+}
+
+
+.range-info strong {
+
+    color: #4f46e5;
+
+    margin-left: 5px;
+
+    font-size: 15px;
+
+}
+
+
+/* Attempts Section */
+
+.attempt-section {
+
+    text-align: left;
+
+    margin-bottom: 25px;
+
+}
+
+
+.attempt-text {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+
+}
+
+
+.attempt-text span {
+
+    font-size: 13px;
+
+    color: #475569;
+
+    font-weight: 600;
+
+}
+
+
+.attempt-text strong {
+
+    color: #4f46e5;
+
+    font-size: 14px;
+
+}
+
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 9px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-fill {
+
+    width: 100%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+
+}
+
+
+/* Input Section */
+
+.input-section {
+
+    text-align: left;
+
+    margin-bottom: 20px;
+
+}
+
+
+.input-section label {
+
+    display: block;
+
+    font-size: 13px;
+
+    color: #334155;
+
+    font-weight: 600;
+
+    margin-bottom: 9px;
+
+}
+
+
+.input-section input {
+
+    width: 100%;
+
+    padding: 15px;
+
+    border: 2px solid #e2e8f0;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    font-family: inherit;
+
+    color: #1e293b;
+
+    transition: 0.3s;
+
+}
+
+
+.input-section input:focus {
+
+    border-color: #6366f1;
+
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+
+}
+
+
+.input-section input::placeholder {
+
+    color: #94a3b8;
+
+}
+
+
+/* Buttons */
+
+.button-section {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.button-section button {
+
+    padding: 14px 10px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.guess-btn {
+
+    flex: 2;
+
+    color: white;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #6366f1
+    );
+
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.25);
+
+}
+
+
+.guess-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
+
+}
+
+
+.restart-btn {
+
+    flex: 1;
+
+    color: #4f46e5;
+
+    background: #eef2ff;
+
+}
+
+
+.restart-btn:hover {
+
+    background: #e0e7ff;
+
+    transform: translateY(-3px);
+
+}
+
+
+/* Disabled Button */
+
+button:disabled {
+
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+}
+
+
+/* Message Box */
+
+.message-box {
+
+    min-height: 55px;
+
+    padding: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    background: #f1f5f9;
+
+    border-radius: 12px;
+
+    color: #475569;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+
+    transition: 0.3s;
+
+}
+
+
+.message-icon {
+
+    font-size: 18px;
+
+}
+
+
+/* Message Colors */
+
+.message-box.success {
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+}
+
+
+.message-box.warning {
+
+    background: #fef3c7;
+
+    color: #b45309;
+
+}
+
+
+.message-box.close {
+
+    background: #ffedd5;
+
+    color: #c2410c;
+
+}
+
+
+.message-box.high {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+}
+
+
+.message-box.low {
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+}
+
+
+.message-box.danger {
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+}
+
+
+/* Game Statistics */
+
+.game-stats {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.stat-box {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-align: left;
+
+    background: #f8fafc;
+
+    padding: 13px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 13px;
+
+}
+
+
+.stat-icon {
+
+    font-size: 23px;
+
+}
+
+
+.stat-box small {
+
+    color: #64748b;
+
+    font-size: 10px;
+
+    display: block;
+
+}
+
+
+.stat-box h3 {
+
+    color: #334155;
+
+    font-size: 14px;
+
+    margin-top: 3px;
+
+}
+
+
+/* Footer */
+
+.footer {
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 480px) {
+
+    .game-card {
+
+        padding: 30px 20px;
+
+    }
+
+    h1 {
+
+        font-size: 23px;
+
+    }
+
+    .game-stats {
+
+        gap: 8px;
+
+    }
+
+    .stat-box {
+
+        padding: 10px;
+
+        gap: 6px;
+
+    }
+
+    .stat-box small {
+
+        font-size: 9px;
+
+    }
+
+}
